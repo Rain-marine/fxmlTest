@@ -111,7 +111,6 @@ public class MainMenuGUI implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         timer.setOnFinished(event -> {
             event.consume();
             trueLogout();
@@ -125,7 +124,6 @@ public class MainMenuGUI implements Initializable {
         choiceBox.getItems().addAll(choices);
         choiceBox.setOnAction(this::choose);
         timer.playFromStart();
-
     }
 
     public  void choose (ActionEvent e){
